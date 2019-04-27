@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        
+        body {
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        
+        .header {
+            overflow: hidden;
+            background-color: #424141;
+            padding: 20px 10px;
+        }
+        
+        .header a {
+            float: left;
+            color: rgb(248, 247, 247);
+            text-align: center;
+            padding: 12px;
+            text-decoration: none;
+            font-size: 18px;
+            line-height: 25px;
+            border-radius: 4px;
+        }
+        
+        .header a.logo {
+            font-size: 25px;
+            font-weight: bold;
+            width: 100%
+        }
+        
+        .header a:hover {
+            background-color: rgb(112, 111, 111);
+            color: rgb(245, 241, 241);
+        }
+        
+        .header a.active {
+            background-color: rgb(15, 15, 15);
+            color: white;
+        }
+        
+        .header-right {
+            float: right;
+        }
+        
+        @media screen and (max-width: 500px) {
+            .header a {
+                float: none;
+                display: block;
+                text-align: left;
+            }
+            .header-right {
+                float: none;
+            }
+        }
+        
+        * {
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: Verdana, sans-serif;
+        }
+        
+        .mySlides {
+            display: none;
+        }
+        
+        img {
+            vertical-align: left;
+            height: 50px;
+        }
+        
+        .slideshow-container {
+            max-width: 2000px;
+            position: relative;
+            margin: auto;
+        }
+        
+        .active {
+            background-color: #717171;
+        }
+        
+        .fade {
+            -webkit-animation-name: fade;
+            -webkit-animation-duration: 1.5s;
+            animation-name: fade;
+            animation-duration: 1.5s;
+        }
+        
+        @-webkit-keyframes fade {
+            from {
+                opacity: .4
+            }
+            to {
+                opacity: 1
+            }
+        }
+        
+        @keyframes fade {
+            from {
+                opacity: .4
+            }
+            to {
+                opacity: 1
+            }
+        }
+        
+        @media only screen and (max-width: 300px) {
+            .text {
+                font-size: 11px
+            }
+        }
+        
+        .flex-container {
+            display: flex;
+            flex-wrap: nowrap;
+            background-color: rgb(144, 144, 146);
+            justify-content: center;
+        }
+        
+        .flex-container>div {
+            background-color: #464545;
+            width: 100px;
+            height: 100px;
+            margin: 10px;
+            text-align: center;
+            line-height: 75px;
+            font-size: 30px;
+        }
+        
+        .button {
+            background-color: rgb(188, 189, 188);
+            border: none;
+            color: black;
+            padding: 16px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 2px;
+            -webkit-transition-duration: 0.4s;
+            transition-duration: 0.4s;
+            cursor: pointer;
+            width: 300px;
+            height: 100px;
+            font-family: Verdana;
+            font-size: 20px;
+        }
+        
+        .button5:hover {
+            background-color: #afaeae;
+            color: white;
+        }
+        
+        .div1 {
+            width: 1400px;
+            height: 200px;
+            background-color: #dddcdc
+        }
+        
+        .pa {
+            text-align: center;
+        }
+        
+        .footer {
+            background-color: black;
+            color: white;
+            text-align: right;
+            text-decoration: none;
+        }
+    </style>
+</head>
+
+<body>
+
+
+    <div class="header">
+        <img src="rb_logo.png" style="width:120px;height:40px;" />
+
+        <div class="header-right">
+            <a href="https://www.royalbrothers.com/coorg/bike-rentals/tariff">Offers</a>
+            <a href="https://www.royalbrothers.com/coorg/bike-rentals/offers">Tariff</a>
+            <a href="https://www.royalbrothers.com/about">Menu</a>
+            <a href="https://www.royalbrothers.com/signup">Sign Up</a>
+            <a href="https://www.royalbrothers.com/signup">Log In</a>
+        </div>
+    </div>
+    <div class="slideshow-container">
+
+        <div class="mySlides fade">
+
+            <img src="RB2.jpg" style="width: 100%; height: 50%;">
+
+        </div>
+
+        <div class="mySlides fade">
+
+            <img src="RB3.jpg" style="width: 100%; height: 50%;">
+
+        </div>
+
+        <div class="mySlides fade">
+
+            <img src="RB4.jpg" style="width: 100; height: 50%;">
+
+        </div>
+
+    </div>
+
+
+    </div>
+    <div class="div1">
+        <br>
+        <br>
+        <button class="button button5"><b><i>40+</i></b><br>Cities</button>
+        <button class="button button5"><b><i>5 M</i></b><br>Kilometers</button>
+        <a href="https://www.facebook.com/royalbrothersindia/"><button class="button button5"><b><i>4.5 rated</i></b><br>On Facebook</button></a>
+        <a href="https://www.google.co.in/search?q=royalbrothers+indiranagar&oq=royalbrothers+indiranagar"> <button class="button button5"><b><i>4.0 rated</i> </b><br> In Google</button></a>
+    </div>
+    <div class="pa">
+        <h2>OUR SPECIALITY</h2>
+        <img src="spec.png" style="width:1400px;height:600px;">
+        <img src="fl.png" style="width:1400px;height:600px;">
+        <img src="pic.png" style="width:1400px;height:600px;">
+    </div>
+
+    <script>
+        var slideIndex = 0;
+        showSlides();
+
+        function showSlides() {
+            var i;
+            var slides = document.getElementsByClassName("mySlides");
+            var dots = document.getElementsByClassName("dot");
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            slideIndex++;
+            if (slideIndex > slides.length) {
+                slideIndex = 1
+            }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex - 1].style.display = "block";
+            dots[slideIndex - 1].className += " active";
+            setTimeout(showSlides, 2000); // Change image every 2 seconds
+        }
+    </script>
+
+
+</body>
+
+</html>
